@@ -1,0 +1,2 @@
+headers = {'User-Agent': 'WebcrawlerProject/1.0 (https://github.com/stacysirbu/WebcrawlerProject)'}
+requests.get(url, headers=headers)
