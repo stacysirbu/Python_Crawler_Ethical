@@ -1,0 +1,9 @@
+import urllib.robotparser
+
+rp = urllib.robotparser.RobotFileParser()
+rp.set_url("https://example.com/robots.txt")
+rp.read()
+
+if rp.can_fetch("*", "https://example.com/some-page"):
+    # safe to crawl
+    pass
